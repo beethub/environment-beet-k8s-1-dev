@@ -1,0 +1,10 @@
+adminUser:
+  password: local:beet-k8s-1/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: contacto.beet@gmail.com
+  token: local:beet-k8s-1/pipelineUser:token
+  username: beethub-boot
+prow:
+  hmacToken: local:beet-k8s-1/prow:hmacToken
