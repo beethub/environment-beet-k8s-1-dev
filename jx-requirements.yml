@@ -15,7 +15,7 @@ cluster:
   provider: kubernetes
 environments:
 - ingress:
-    domain: 138.197.48.28.nip.io
+    domain: 174.138.108.97.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -46,7 +46,7 @@ environments:
   repository: environment-beet-k8s-1-production
 gitops: true
 ingress:
-  domain: 138.197.48.28.nip.io
+  domain: 174.138.108.97.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
