@@ -15,12 +15,12 @@ cluster:
   provider: kubernetes
 environments:
 - ingress:
-    domain: 174.138.108.97.nip.io
+    domain: apps.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: dev.
     tls:
-      email: ""
-      enabled: false
+      email: contacto.beet@gmail.com
+      enabled: true
       production: false
   key: dev
   repository: environment-beet-k8s-1-dev
@@ -46,12 +46,12 @@ environments:
   repository: environment-beet-k8s-1-production
 gitops: true
 ingress:
-  domain: 174.138.108.97.nip.io
+  domain: apps.beethub.com.mx
   externalDNS: false
-  namespaceSubDomain: -jx.
+  namespaceSubDomain: dev.
   tls:
-    email: ""
-    enabled: false
+    email: contacto.beet@gmail.com
+    enabled: true
     production: false
 kaniko: true
 repository: nexus
