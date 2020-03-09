@@ -21,7 +21,7 @@ environments:
     tls:
       email: contacto.beet@gmail.com
       enabled: true
-      production: false
+      production: true
   key: dev
   repository: environment-beet-k8s-1-dev
 - ingress:
@@ -52,7 +52,7 @@ ingress:
   tls:
     email: contacto.beet@gmail.com
     enabled: true
-    production: false
+    production: true
 kaniko: true
 repository: nexus
 secretStorage: local
