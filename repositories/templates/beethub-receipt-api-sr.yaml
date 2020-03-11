@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: beethub
+    provider: github
+    repository: receipt-api
+  name: beethub-receipt-api
+spec:
+  description: Imported application for beethub/receipt-api
+  httpCloneURL: https://github.com/beethub/receipt-api.git
+  org: beethub
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: receipt-api
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/beethub/receipt-api.git
