@@ -13,7 +13,6 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: kubernetes
-  registry: http://jenkins-x-docker-registry:5000
 environments:
 - ingress:
     domain: apps.beethub.com.mx
