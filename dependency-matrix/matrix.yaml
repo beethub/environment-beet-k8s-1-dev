@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: beethub
+  repo: receipt-api
+  url: https://github.com/beethub/receipt-api.git
+  version: ""
+  versionURL: ""
