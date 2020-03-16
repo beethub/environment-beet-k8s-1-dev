@@ -1,7 +1,7 @@
 {{- if .Values.certmanager.enabled }}
 {{- if eq .Values.certmanager.production "true" }}
 apiVersion: cert-manager.io/v1alpha2
-kind: Issuer
+kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
 spec:
@@ -12,11 +12,7 @@ spec:
     privateKeySecretRef:
       name: letsencrypt-prod
     solvers:
-    - selector:
-        dnsNames:
-        - "*.{{ .Values.cluster.domain }}"
-        - "{{ .Values.cluster.domain }}"
-      # ACME DNS-01 provider configurations
+    - selector: {}
       dns01:
         digitalocean:
           tokenSecretRef:

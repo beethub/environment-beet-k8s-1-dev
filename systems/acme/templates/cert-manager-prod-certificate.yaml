@@ -10,6 +10,7 @@ spec:
   secretName: "tls-{{ .Values.cluster.domain | replace "." "-" }}-p"
   issuerRef:
     name: letsencrypt-prod
+    kind: ClusterIssuer
   commonName: "*.{{ .Values.cluster.domain }}"
   dnsNames:
   - "*.{{ .Values.cluster.domain }}"
