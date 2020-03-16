@@ -26,13 +26,13 @@ environments:
   key: dev
   repository: environment-beet-k8s-1-dev
 - ingress:
-    domain: ""
+    domain: apps.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: ""
+    namespaceSubDomain: trn.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: contacto.beet@gmail.com
+      enabled: true
+      production: true
   key: staging
   repository: environment-beet-k8s-1-staging
 - ingress:
