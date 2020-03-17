@@ -16,9 +16,9 @@ cluster:
   registry: docker.io
 environments:
 - ingress:
-    domain: beethub.com.mx
+    domain: dev.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: .dev.
+    namespaceSubDomain: .
     tls:
       email: contacto.beet@gmail.com
       enabled: true
@@ -26,9 +26,9 @@ environments:
   key: dev
   repository: environment-beet-k8s-1-dev
 - ingress:
-    domain: beethub.com.mx
+    domain: trn.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: .trn.
+    namespaceSubDomain: .
     tls:
       email: contacto.beet@gmail.com
       enabled: true
@@ -47,9 +47,9 @@ environments:
   repository: environment-beet-k8s-1-production
 gitops: true
 ingress:
-  domain: beethub.com.mx
+  domain: dev.beethub.com.mx
   externalDNS: false
-  namespaceSubDomain: .dev.
+  namespaceSubDomain: .
   tls:
     email: contacto.beet@gmail.com
     enabled: true
