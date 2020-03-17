@@ -12,10 +12,7 @@ spec:
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
-    - selector:
-        dnsNames:
-        - "*.{{ .Values.cluster.domain }}"
-        - "{{ .Values.cluster.domain }}"
+    - selector: {}
       # ACME DNS-01 provider configurations
       dns01:
         digitalocean:
