@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/beethub/receipt-api.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: beethub
+  repo: beet
+  url: https://github.com/beethub/beet.git
+  version: ""
+  versionURL: ""
