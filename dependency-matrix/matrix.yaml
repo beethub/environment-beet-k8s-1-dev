@@ -17,3 +17,9 @@ dependencies:
   url: https://github.com/beethub/api.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: beethub
+  repo: file
+  url: https://github.com/beethub/file.git
+  version: ""
+  versionURL: ""

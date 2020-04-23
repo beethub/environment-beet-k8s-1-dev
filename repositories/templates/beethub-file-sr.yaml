@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: beethub
+    provider: github
+    repository: file
+  name: beethub-file
+spec:
+  description: Imported application for beethub/file
+  httpCloneURL: https://github.com/beethub/file.git
+  org: beethub
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: file
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/beethub/file.git
