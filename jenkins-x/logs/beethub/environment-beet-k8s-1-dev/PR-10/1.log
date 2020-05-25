@@ -1,0 +1,87 @@
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-lnkdz[0m
+{"level":"warn","ts":1590440529.464678,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1590440529.4660854,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-lk8nv[0m
+{"level":"warn","ts":1590440530.3302774,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1590440530.3316426,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-beethub-environment-beet-k8s-1-wqbj2-r7ngw[0m
+{"level":"warn","ts":1590440571.5084286,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1590440571.800141,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/beethub/environment-beet-k8s-1-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:c96aea60488624977f53c76ee321cea3b9e620a7,10:0b856aa9770c0ec1feaab1b5edd9759ef486e913
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git fetch origin --unshallow 0b856aa9770c0ec1feaab1b5edd9759ef486e913: c96aea60488624977f53c76ee321cea3b9e620a7:
+DEBUG: ran git fetch --unshallow origin 0b856aa9770c0ec1feaab1b5edd9759ef486e913: c96aea60488624977f53c76ee321cea3b9e620a7: in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard c96aea60488624977f53c76ee321cea3b9e620a7
+DEBUG: ran git reset --hard c96aea60488624977f53c76ee321cea3b9e620a7 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 0b856aa9770c0ec1feaab1b5edd9759ef486e913
+DEBUG: ran git merge 0b856aa9770c0ec1feaab1b5edd9759ef486e913 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e c96aea60488624977f53c76ee321cea3b9e620a7..HEAD
+Merged SHA 0b856aa9770c0ec1feaab1b5edd9759ef486e913 with commit message 'feat: upgrade pipeline builder images' into base branch master
+Merged SHA 007c05779fda330841b9edea470c380ca68f0202 with commit message 'feat: upgrade version stream' into base branch master
+Merged SHA 666cb7e62ab9d7b1881853c57e91fb7278b7cfc5 with commit message 'release 1.0.90' into base branch master
+Merged SHA 1371a2f499acfb05f4a9ddda235cec4a41d14ccc with commit message 'fix: Less confusing wording for Docker Registry configuration' into base branch master
+Merged SHA 3ab4400c1eb11358115f6239a3af389d14f7b778 with commit message 'fix: Copy ** dependencies into temp JX_HOME' into base branch master
+Merged SHA 8294d9b3a65167321e1ff2865ed11600a6177afb with commit message 'feat: configure boot for Openshift with restricted permissions' into base branch master
+Merged SHA c6e666707f5713320f64e688eb64902653d5024f with commit message 'fix: making sure that custom, non default Docker registry can be used on EKS and GKE' into base branch master
+Merged SHA fda0f8aafd00d0be5705880802e9b8630f450656 with commit message 'Use the correct kaniko credsStore' into base branch master
+Merged SHA 7a0b3a0fef5f1230e972732e75b78a1563eb2f7e with commit message 'chore: Switch to Lighthouse as default' into base branch master
+Merged SHA 451a8145a2ba50258c3eaed2a5670d482d7dcbb2 with commit message 'chore: Switch boot-vault to lighthouse' into base branch master
+Merged SHA 225cb38675f3a75911a5558c0973ea22acaa8cb2 with commit message 'fix: Update Lighthouse-related configuration' into base branch master
+Merged SHA 247433c8fbba094a941e07a36040749c49b3ab96 with commit message 'feat: add ecr permissions to tekton-bot' into base branch master
+Merged SHA b33c4c9d874c5363f517f95a97072cc90d6f5946 with commit message 'feat: make some configuration changes for Openshift' into base branch master
+Merged SHA a7d8d1433e1b2b3d81d5748ab17d857b97f19de0 with commit message 'chore: Add Hardy to OWNERS' into base branch master
+Merged SHA c5d56ed9cd0b2ab882af666d0f8371cc8cf7c9fb with commit message 'fix: Get rid of hardcoded gcactivities image and tag' into base branch master
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+
+Showing logs for build [32mbeethub-environment-beet-k8s-1-wqbj2-1[0m stage [32mpr-checks[0m and container [32mstep-lint-env-helm[0m
+rm -rf charts
+rm -rf requirements.lock
+helm init --client-only
+Creating /builder/home/.helm 
+Creating /builder/home/.helm/repository 
+Creating /builder/home/.helm/repository/cache 
+Creating /builder/home/.helm/repository/local 
+Creating /builder/home/.helm/plugins 
+Creating /builder/home/.helm/starters 
+Creating /builder/home/.helm/cache/archive 
+Creating /builder/home/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Adding local repo with URL: http://127.0.0.1:8879/charts 
+$HELM_HOME has been configured at /builder/home/.helm.
+Not installing Tiller due to 'client-only' flag having been set
+Happy Helming!
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+** step helm build --boot --provider-values-dir=../kubeProviders
+WARNING: could not find a git repository in the directory .: No git conf dir found
+Ignoring templates/.gitignore
+Applying the kubernetes overrides at ../kubeProviders/kubernetes/values.tmpl.yaml
+Verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: fe1ae2a96bd11b7cd0f0ad6cbc64f8074e697d1c
+Wrote chart values.yaml values.yaml generated from directory tree
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+helm lint .
+==> Linting .
+Lint OK
+
+1 chart(s) linted, no failures
